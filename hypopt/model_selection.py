@@ -133,6 +133,8 @@ def _compute_score(model, X, y, scoring_metric = None, scoring_params = None):
         return -1. * metrics.median_absolute_error(y, model.predict(X), **scoring_params)
     elif scoring_metric == 'r2':
         return metrics.r2_score(y, model.predict(X), **scoring_params)
+    elif scoring_metric == 'cohen_k':
+        return metrics.cohen_kappa_score(y, model.predict(X), **scoring_params)
     else:
         raise ValueError(scoring_metric + 'is not a supported metric.')
 
