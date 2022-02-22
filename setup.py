@@ -24,7 +24,7 @@ setup(
     license='MIT',
     long_description=long_description,
     description = 'Grid search hyper-parameter optimization using a validation set (not cross validation)',
-    url = 'https://github.com/cgnorthcutt/hypopt',
+    url = 'https://github.com/cgnorthcutt/hypopti.',
 
     author = 'Curtis G. Northcutt',
     author_email = 'cgn@mit.edu',
@@ -62,5 +62,5 @@ setup(
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=['numpy>=1.11.3', 'scikit-learn==0.22.1'],
+    install_requires=['numpy==1.17.2', 'scikit-learn==0.22.1'],
 )
